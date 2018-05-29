@@ -1,9 +1,9 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2><br>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="panel panel-default">
+  <div id="clear" class="panel panel-default">
     <div class="panel-body">
 
       <div class="form-inputs">
@@ -14,8 +14,8 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control", :autofocus => true %>
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, class: "form-control", :autofocus => true %>
       </div>
 
       <div class="form-group">
@@ -36,7 +36,7 @@
 
     <% end %>
   </div>
-  <div class="panel-footer">
+  <div id="clear" class="panel-footer">
 
     <h3>Cancel my account</h3>
 

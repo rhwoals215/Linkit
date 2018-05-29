@@ -16,14 +16,30 @@
  @import "bootstrap";
 
  #logo {
- 	font-size: 26px;
- 	font-weight: 700;
+ 	font-size: 36px;
+ 	font-weight: 800;
  	text-transform: uppercase;
- 	letter-spacing: -1px;
+ 	letter-spacing: 2px;
  	padding: 15px 0;
  	a {
- 		color: #2F363E;
+ 		color: #FFFFFF;
  	}
+  a:hover, a:active {
+    color: #00FFFF;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  background-color:#15317E;
+ }
+
+ #navbar{
+   background-color:#15317E;
+   a {
+     color: #FFFFFF;
+   }
+   position: fixed;
+     z-index: 10;
  }
 
  #main_content {
@@ -33,11 +49,11 @@
  	padding-bottom: 100px;
  	.link {
  		padding: 2em 1em;
- 		border-bottom: 1px solid #e9e9e9;
+ 		border-bottom: 2px solid #000000;
  		.title {
 
  			a {
- 				color: #FF4500;
+ 				color: #000000;
  			}
  		}
  	}
@@ -54,3 +70,32 @@
  		}
  	}
  }
+ #body {
+   background-image: url("beach.jpg");
+   background-repeat: no-repeat;
+ }
+
+ #link_title {
+   a {
+     color: #000000;
+   }
+   a:hover, a:active {
+     color: white;
+   }
+   a:link {
+     text-decoration: none;
+   }
+ }
+
+#submitted_by {
+  color: #0000A0;
+}
+#clear {
+  background:rgba(0,0,0,0);
+  border:none;
+}
+#black {
+  a{
+    color: #000000;
+  }
+}
